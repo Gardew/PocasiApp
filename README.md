@@ -1,5 +1,5 @@
 Aplikace Počasí
-Aplikace Počasí je Java aplikace s GUI pro zobrazení aktuálních meteorologických informací. Umožňuje uživatelům zadat název lokality a získat aktuální počasí pro danou lokalitu.
+Java aplikace s GUI pro zobrazení aktuálních meteorologických informací. Umožňuje uživatelům zadat název lokality a získat aktuální počasí pro danou lokalitu.
 
 Funkce
 Aplikace umožňuje uživatelům vyhledat aktuální počasí pro zadanou lokalitu prostřednictvím vyhledávacího pole. 
@@ -15,15 +15,12 @@ Vlhkost: Poskytuje textovou informaci o aktuální vlhkosti vzduchu v procentech
 Rychlost větru: Poskytuje textovou informaci o aktuální rychlosti větru v kilometrech za hodinu.
 
 Instalace
-Naklonujte tento repozitář na svůj počítač.
 
 git clone https://github.com/Gardew/PocasiApp.git
 
-Otevřete projekt ve vašem oblíbeném vývojovém prostředí (IDE) podporujícím Java.
-Spusťte aplikaci pomocí hlavní třídy AplikacePocasiGui.
 
-Použité technologie
+Použité technologie:
 Java
-Swing (pro GUI)
-JSON.simple (pro práci s JSON)
-Java ImageIO (pro zpracování obrázků)
+Swing
+JSON.simple 
+
