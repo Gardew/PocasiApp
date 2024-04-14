@@ -9,8 +9,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
-// Načtení dat o počasí z API - tento backendový kód získává nejnovější data o počasí z externího API a vrátí je.
-// GUI pak tato data zobrazí uživateli.
+
 public class AplikacePocasi {
 
     // Získání dat o počasí pro zadanou lokalitu
@@ -18,7 +17,7 @@ public class AplikacePocasi {
         // Získání souřadnic lokality pomocí geolokačního API
         JSONArray dataLokality = ziskatDataLokality(nazevLokality);
 
-        // Extrahování dat o šířce a délce
+        // data o změpisné šířce a délce
         JSONObject lokalita = (JSONObject) dataLokality.get(0);
         double sirka = (double) lokalita.get("latitude");
         double delka = (double) lokalita.get("longitude");
@@ -80,7 +79,7 @@ public class AplikacePocasi {
             JSONArray dataRychlostiVetru = (JSONArray) hodinove.get("windspeed_10m");
             double rychlostVetru = (double) dataRychlostiVetru.get(index);
 
-            // Vytvoření objektu JSON s počasím, který budeme přístupovat na frontendu
+            // Vytvoření objektu JSON s počasím
             JSONObject dataPocasi = new JSONObject();
             dataPocasi.put("teplota", teplota);
             dataPocasi.put("stav_pocasi", stavPocasi);
