@@ -61,7 +61,7 @@ public class AplikacePocasi {
 
             //  získat data aktuální hodin
             JSONArray cas = (JSONArray) hodinove.get("time");
-            int index = najitIndexAktualnihoCasu(cas);
+            int index = najitShodu(cas);
 
             // Získání teploty
             JSONArray dataTeploty = (JSONArray) hodinove.get("temperature_2m");
@@ -157,7 +157,7 @@ public class AplikacePocasi {
         return null;
     }
 
-    private static int najitIndexAktualnihoCasu(JSONArray seznamCasu){
+    private static int najitShodu(JSONArray seznamCasu){
         String aktualniCas = ziskatAktualniCas();
 
         // Procházení seznamu času a hledání shody s aktuálním časem

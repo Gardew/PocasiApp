@@ -71,7 +71,7 @@ public class AplikacePocasiGui extends JFrame {
         tlacitkoVyhledat.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String zadanyText = (vyhledavaciPole.getText());
+                String zadanyText = odstranDiakritiku(vyhledavaciPole.getText());
 
                 dataPocasi = AplikacePocasi.ziskatData(zadanyText);
 
@@ -108,7 +108,7 @@ public class AplikacePocasiGui extends JFrame {
         add(tlacitkoVyhledat);
     }
 
-    public static String removeAccents(String text) {
+    public static String odstranDiakritiku(String text) {
         String s = text == null ? null :
                 Normalizer.normalize(text, Normalizer.Form.NFD)
                         .replaceAll("\\p{InCombiningDiacriticalMarks}+", "");
