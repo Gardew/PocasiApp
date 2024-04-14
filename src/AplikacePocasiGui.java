@@ -21,7 +21,7 @@ public class AplikacePocasiGui extends JFrame {
         setLocationRelativeTo(null);
         setLayout(null);
         setResizable(false);
-
+        setBackground(Color.DARK_GRAY);
         pridejKomponenty();
     }
 
@@ -31,7 +31,7 @@ public class AplikacePocasiGui extends JFrame {
         vyhledavaciPole.setFont(new Font("Dialog", Font.PLAIN, 24));
         add(vyhledavaciPole);
 
-        JLabel obrazekStavuPocasi = new JLabel(nactiObrazek("src/assets/cloudy.png"));
+        JLabel obrazekStavuPocasi = new JLabel(nactiObrazek("src/assets/zatazeno.png"));
         obrazekStavuPocasi.setBounds(0, 125, 450, 217);
         add(obrazekStavuPocasi);
 
@@ -47,7 +47,7 @@ public class AplikacePocasiGui extends JFrame {
         popisStavuPocasi.setHorizontalAlignment(SwingConstants.CENTER);
         add(popisStavuPocasi);
 
-        JLabel obrazekVlhkosti = new JLabel(nactiObrazek("src/assets/humidity.png"));
+        JLabel obrazekVlhkosti = new JLabel(nactiObrazek("src/assets/vlhkost.png"));
         obrazekVlhkosti.setBounds(15, 500, 74, 66);
         add(obrazekVlhkosti);
 
@@ -56,7 +56,7 @@ public class AplikacePocasiGui extends JFrame {
         vlhkostText.setFont(new Font("Dialog", Font.PLAIN, 16));
         add(vlhkostText);
 
-        JLabel obrazekRychlostiVetru = new JLabel(nactiObrazek("src/assets/windspeed.png"));
+        JLabel obrazekRychlostiVetru = new JLabel(nactiObrazek("src/assets/rychlost.png"));
         obrazekRychlostiVetru.setBounds(220, 500, 74, 66);
         add(obrazekRychlostiVetru);
 
@@ -65,7 +65,7 @@ public class AplikacePocasiGui extends JFrame {
         rychlostVetruText.setFont(new Font("Dialog", Font.PLAIN, 16));
         add(rychlostVetruText);
 
-        JButton tlacitkoVyhledat = new JButton(nactiObrazek("src/assets/search.png"));
+        JButton tlacitkoVyhledat = new JButton(nactiObrazek("src/assets/hledej.png"));
         tlacitkoVyhledat.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         tlacitkoVyhledat.setBounds(375, 13, 47, 45);
         tlacitkoVyhledat.addActionListener(new ActionListener() {
@@ -80,16 +80,16 @@ public class AplikacePocasiGui extends JFrame {
 
                 switch(stavPocasi){
                     case "Jasno":
-                        obrazekStavuPocasi.setIcon(nactiObrazek("src/assets/clear.png"));
+                        obrazekStavuPocasi.setIcon(nactiObrazek("src/assets/slunecno.png"));
                         break;
                     case "Zataženo":
-                        obrazekStavuPocasi.setIcon(nactiObrazek("src/assets/cloudy.png"));
+                        obrazekStavuPocasi.setIcon(nactiObrazek("src/assets/zatazeno.png"));
                         break;
                     case "Déšť":
-                        obrazekStavuPocasi.setIcon(nactiObrazek("src/assets/rain.png"));
+                        obrazekStavuPocasi.setIcon(nactiObrazek("src/assets/dest.png"));
                         break;
                     case "Sníh":
-                        obrazekStavuPocasi.setIcon(nactiObrazek("src/assets/snow.pngImage"));
+                        obrazekStavuPocasi.setIcon(nactiObrazek("src/assets/snih.png"));
                         break;
                 }
 
