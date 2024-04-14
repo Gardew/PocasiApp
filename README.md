@@ -1,5 +1,5 @@
 Aplikace Počasí
-Java aplikace s GUI pro zobrazení aktuálních meteorologických informací. Umožňuje uživatelům zadat název lokality a získat aktuální počasí pro danou lokalitu.
+Java aplikace s GUI slouží pro zobrazení aktuálních meteorologických informací. Umožňuje uživatelům zadat název lokality a získat aktuální počasí pro danou lokalitu.
 
 Funkce
 Aplikace umožňuje uživatelům vyhledat aktuální počasí pro zadanou lokalitu prostřednictvím vyhledávacího pole. 
