@@ -20,7 +20,10 @@ git clone https://github.com/Gardew/PocasiApp.git
 
 
 Použité technologie:
+
 Java
+
 Swing
+
 JSON.simple 
 
