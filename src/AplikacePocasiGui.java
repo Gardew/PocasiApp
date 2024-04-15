@@ -21,7 +21,7 @@ public class AplikacePocasiGui extends JFrame {
         setLocationRelativeTo(null);
         setLayout(null);
         setResizable(false);
-        getContentPane().setBackground(Color.YELLOW);  //Whatever color
+        getContentPane().setBackground(Color.getHSBColor(180,36,100));
 
         pridejKomponenty();
     }
