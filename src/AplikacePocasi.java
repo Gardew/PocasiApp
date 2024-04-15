@@ -25,8 +25,8 @@ public class AplikacePocasi {
         // Sestavení URL API požadavku s lokálními souřadnicemi
         String urlAdresa = "https://api.open-meteo.com/v1/forecast?" +
                 "latitude=" + sirka + "&longitude=" + delka +
-                "&hourly=temperature_2m,relativehumidity_2m,weathercode,windspeed_10m&timezone=America%2FLos_Angeles";
-
+                "&hourly=temperature_2m,relativehumidity_2m,weathercode,windspeed_10m";
+        System.out.println(urlAdresa);
         try{
             // Volání API a získání odpovědi
             HttpURLConnection spojeni = ziskatOdpovedAPI(urlAdresa);
