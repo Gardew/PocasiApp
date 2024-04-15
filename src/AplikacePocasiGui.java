@@ -28,7 +28,7 @@ public class AplikacePocasiGui extends JFrame {
 
     private void pridejKomponenty(){
         JTextField vyhledavaciPole = new JTextField("Zadej město");
-        vyhledavaciPole.setBounds(15, 15, 351, 45);
+        vyhledavaciPole.setBounds(15, 15, 740, 45);
         vyhledavaciPole.setFont(new Font("Dialog", Font.PLAIN, 24));
         add(vyhledavaciPole);
 
@@ -68,7 +68,7 @@ public class AplikacePocasiGui extends JFrame {
 
         JButton tlacitkoVyhledat = new JButton(nactiObrazek("src/assets/hledej.png"));
         tlacitkoVyhledat.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-        tlacitkoVyhledat.setBounds(375, 13, 47, 45);
+        tlacitkoVyhledat.setBounds(770, 13, 47, 45);
         tlacitkoVyhledat.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
