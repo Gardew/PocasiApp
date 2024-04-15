@@ -17,11 +17,12 @@ public class AplikacePocasiGui extends JFrame {
         super("Počasí");
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(450, 650);
+        setSize(850, 400);
         setLocationRelativeTo(null);
         setLayout(null);
         setResizable(false);
-        setBackground(Color.DARK_GRAY);
+        getContentPane().setBackground(Color.YELLOW);  //Whatever color
+
         pridejKomponenty();
     }
 
@@ -32,36 +33,36 @@ public class AplikacePocasiGui extends JFrame {
         add(vyhledavaciPole);
 
         JLabel obrazekStavuPocasi = new JLabel(nactiObrazek("src/assets/zatazeno.png"));
-        obrazekStavuPocasi.setBounds(0, 125, 450, 217);
+        obrazekStavuPocasi.setBounds(400, 45, 450, 217);
         add(obrazekStavuPocasi);
 
         JLabel teplotniText = new JLabel("-- C");
-        teplotniText.setBounds(0, 350, 450, 54);
+        teplotniText.setBounds(400, 250, 450, 54);
         teplotniText.setFont(new Font("Dialog", Font.BOLD, 48));
         teplotniText.setHorizontalAlignment(SwingConstants.CENTER);
         add(teplotniText);
 
         JLabel popisStavuPocasi = new JLabel("--");
-        popisStavuPocasi.setBounds(0, 405, 450, 36);
+        popisStavuPocasi.setBounds(400, 305, 450, 36);
         popisStavuPocasi.setFont(new Font("Dialog", Font.PLAIN, 32));
         popisStavuPocasi.setHorizontalAlignment(SwingConstants.CENTER);
         add(popisStavuPocasi);
 
         JLabel obrazekVlhkosti = new JLabel(nactiObrazek("src/assets/vlhkost.png"));
-        obrazekVlhkosti.setBounds(15, 500, 74, 66);
+        obrazekVlhkosti.setBounds(15, 150, 74, 66);
         add(obrazekVlhkosti);
 
         JLabel vlhkostText = new JLabel("<html><b>Vlhkost</b> --%</html>");
-        vlhkostText.setBounds(90, 500, 85, 55);
+        vlhkostText.setBounds(95, 150, 150, 55);
         vlhkostText.setFont(new Font("Dialog", Font.PLAIN, 16));
         add(vlhkostText);
 
         JLabel obrazekRychlostiVetru = new JLabel(nactiObrazek("src/assets/rychlost.png"));
-        obrazekRychlostiVetru.setBounds(220, 500, 74, 66);
+        obrazekRychlostiVetru.setBounds(10, 250, 74, 66);
         add(obrazekRychlostiVetru);
 
         JLabel rychlostVetruText = new JLabel("<html><b>Vítr </b> --km/h</html>");
-        rychlostVetruText.setBounds(310, 500, 85, 55);
+        rychlostVetruText.setBounds(100, 250, 85, 55);
         rychlostVetruText.setFont(new Font("Dialog", Font.PLAIN, 16));
         add(rychlostVetruText);
 
